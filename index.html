@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BJ Servicio Técnico | Refrigeración y Electricidad</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO / BANNER CON ANCLAS -->
+  <header class="banner">
+    <div class="banner-inner">
+      <a href="#inicio" class="brand">
+        <img src="img/Logo.jpg" alt="Logo BJ Servicio Técnico" class="logo-img">
+        <span>BJ Servicio Técnico</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="menu-principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#informacion">Información</a></li>
+          <li><a href="#refrigeracion">Refrigeración</a></li>
+          <li><a href="#electricidad">Electricidad</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PORTADA / HERO -->
+  <main id="inicio" class="contenedor">
+    <section class="hero">
+      <div class="hero-texto">
+        <span class="badge-urgencia">Atención técnica a domicilio</span>
+        <h1>Soluciones en Refrigeración y Electricidad</h1>
+        <p>Diagnóstico preciso, instalación, mantenimiento preventivo y reparaciones garantizadas para hogares y comercios.</p>
+        <div class="hero-botones">
+          <a href="#contacto" class="btn btn-rojo">Solicitar presupuesto</a>
+          <a href="#refrigeracion" class="btn btn-borde">Ver servicios</a>
+        </div>
+      </div>
+      <div class="hero-imagen">
+        <img src="img/logo.jpg" alt="BJ Refrigeración y Electricidad">
+      </div>
+    </section>
+
+    <!-- INFORMACIÓN / POR QUÉ ELEGIRNOS -->
+    <section id="informacion" class="seccion">
+      <h2>Información del Servicio</h2>
+      <div class="grid-info">
+        <article class="card">
+          <h3>Diagnóstico en el lugar</h3>
+          <p>Revisamos el equipo o la instalación eléctrica con instrumental adecuado antes de pasar presupuesto.</p>
+        </article>
+        <article class="card">
+          <h3>Repuestos y materiales</h3>
+          <p>Trabajamos con componentes confiables y normas de seguridad vigentes en cada instalación.</p>
+        </article>
+        <article class="card">
+          <h3>Garantía</h3>
+          <p>Respaldo real sobre las reparaciones e instalaciones realizadas.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECCIÓN REFRIGERACIÓN (ACENTO VERDE) -->
+    <section id="refrigeracion" class="seccion">
+      <h2 class="titulo-verde">Refrigeración</h2>
+      <div class="grid-servicios">
+        <article class="card card--refrigeracion">
+          <h3>Aires Acondicionados Split</h3>
+          <p>Instalación completa, desinstalación, limpieza profunda de filtros y turbinas, y control de presión.</p>
+        </article>
+        <article class="card card--refrigeracion">
+          <h3>Carga de Gas y Detección de Fugas</h3>
+          <p>Presurización con nitrógeno, reparación de pérdidas y recarga de gases refrigerantes.</p>
+        </article>
+        <article class="card card--refrigeracion">
+          <h3>Mantenimiento de Equipos</h3>
+          <p>Limpieza, revisión preventiva y ajuste de equipos para mejorar su rendimiento y prolongar su vida útil.</p>
+          <img src="img/instagram-trabajo.png" alt="Ejemplo de mantenimiento de equipos" class="muestra-servicio" loading="lazy">
+        </article>
+      </div>
+      <div class="carousel-controles" aria-label="Carrusel de servicios de refrigeración">
+        <button type="button" class="carousel-anterior" aria-label="Servicio anterior">&larr;</button>
+        <button type="button" class="carousel-siguiente" aria-label="Servicio siguiente">&rarr;</button>
+      </div>
+    </section>
+
+    <!-- SECCIÓN ELECTRICIDAD (ACENTO AZUL) -->
+    <section id="electricidad" class="seccion">
+      <h2 class="titulo-azul">Electricidad</h2>
+      <div class="grid-servicios">
+        <article class="card card--electricidad">
+          <h3>Tableros y Protecciones</h3>
+          <p>Armado y actualización de tableros con llaves térmicas, disyuntores diferenciales y puesta a tierra.</p>
+        </article>
+        <article class="card card--electricidad">
+          <h3>Instalaciones Domiciliarias</h3>
+          <p>Cableado nuevo, recableado de viviendas antiguas, tomas, luminarias LED y ventiladores.</p>
+        </article>
+        <article class="card card--electricidad">
+          <h3>Urgencias y Cortocircuitos</h3>
+          <p>Búsqueda y solución de fugas a tierra, cortes parciales y fallas de tensión.</p>
+        </article>
+      </div>
+      <div class="carousel-controles" aria-label="Carrusel de servicios de electricidad">
+        <button type="button" class="carousel-anterior" aria-label="Servicio anterior">&larr;</button>
+        <button type="button" class="carousel-siguiente" aria-label="Servicio siguiente">&rarr;</button>
+      </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO (SIN BACKEND: ENLACES DIRECTOS) -->
+    <section id="contacto" class="seccion contacto-box">
+      <h2>Contacto Directo</h2>
+      <p>Escribinos para coordinar una visita técnica.</p>
+      <div class="contacto-acciones">
+        <a href="https://wa.me/5493765074376?text=Hola%20BJ%20Servicio%20T%C3%A9cnico,%20necesito%20hacer%20una%20consulta" target="_blank" class="btn btn-verde">Escribir por WhatsApp</a>
+        <a href="https://www.instagram.com/refribj/" target="_blank" rel="noopener noreferrer" class="btn btn-instagram">Ver Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 BJ Servicio Técnico — Refrigeración y Electricidad.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

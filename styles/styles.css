@@ -412,7 +412,187 @@ main[id] {
   .reveal,
   .menu-toggle span,
   .banner nav,
-  .grid-servicios {
+  .grid-servicios,
+  .carrusel-lista {
     transition: none;
   }
+}
+
+.carrusel-trabajos {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+}
+
+.carrusel-ventana {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  touch-action: pan-y;
+}
+
+.carrusel-lista {
+  display: flex;
+  transition: transform 0.45s ease;
+}
+
+.trabajo {
+  flex: 0 0 100%;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--tarjeta);
+}
+
+.trabajo img {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  height: 320px;
+  margin: 0 auto;
+  object-fit: contain;
+  background: var(--negro);
+}
+
+.trabajo h3 {
+  margin: 0;
+  padding: 14px;
+  text-align: center;
+}
+
+.carrusel-puntos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  padding: 4px;
+}
+
+.carrusel-navegacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.carrusel-flecha {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--tarjeta);
+  color: var(--blanco);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.carrusel-flecha:hover {
+  background: var(--azul);
+  transform: scale(1.08);
+}
+
+.carrusel-flecha:focus-visible {
+  outline: 2px solid var(--verde);
+  outline-offset: 3px;
+}
+
+.punto-carrusel {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #777;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.punto-carrusel:hover {
+  transform: scale(1.2);
+}
+
+.punto-carrusel:nth-child(1) {
+  --color-activo: var(--azul);
+}
+
+.punto-carrusel:nth-child(2) {
+  --color-activo: var(--verde);
+}
+
+.punto-carrusel:nth-child(3) {
+  --color-activo: var(--rojo);
+}
+
+.punto-carrusel:nth-child(4) {
+  --color-activo: #8b5cf6;
+}
+
+.punto-carrusel:nth-child(5) {
+  --color-activo: var(--blanco);
+}
+
+.punto-carrusel.activo {
+  width: 26px;
+  border-radius: 999px;
+  background: var(--color-activo, var(--verde));
+  box-shadow: 0 0 10px var(--color-activo, rgba(40, 216, 26, 0.5));
+}
+
+@media (max-width: 600px) {
+  .carrusel-trabajos {
+    gap: 10px;
+    padding: 0 8px;
+  }
+
+  .carrusel-flecha {
+    width: 34px;
+    height: 34px;
+  }
+
+  .trabajo img {
+    height: 220px;
+  }
+}
+
+.refri {
+  display: block;
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto 0;
+}
+
+.visor-imagen {
+  width: 90vw;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.visor-imagen-grande {
+  display: block;
+  max-width: 100%;
+  max-height: 75vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.visor-imagen-grande {
+  cursor: zoom-in;
+}
+
+.visor-imagen-grande.ampliada {
+  max-width: none;
+  max-height: none;
+  cursor: zoom-out;
 }

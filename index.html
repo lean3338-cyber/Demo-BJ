@@ -34,6 +34,43 @@
     </div>
   </header>
 
+  <section class="carrusel-trabajos" aria-label="Trabajos realizados">
+  <div class="carrusel-ventana">
+    <div class="carrusel-lista">
+      <article class="trabajo">
+        <img src="img-trabajos/Elec.jpg" alt="Trabajo realizado 1">
+        <h3>Instalación realizada</h3>
+      </article>
+
+      <article class="trabajo">
+        <img src="img-trabajos/mantenimiento.jpg" alt="Trabajo realizado 2">
+        <h3>Mantenimiento realizado</h3>
+      </article>
+
+      <article class="trabajo">
+        <img src="img-trabajos/electricidad.jpg" alt="Trabajo realizado 3">
+        <h3>instalacion de luces</h3>
+      </article>
+
+      <article class="trabajo">
+        <img src="img-trabajos/mantenimientoaire.jpg" alt="Trabajo realizado 3">
+        <h3>Mantenimiento realizado</h3>
+      </article>
+
+      <article class="trabajo">
+        <img src="img-trabajos/ele.jpg" alt="Trabajo realizado 3">
+        <h3>mejoras de iluminaria</h3>
+      </article>
+    </div>
+  </div>
+
+  <div class="carrusel-navegacion" role="group" aria-label="Controles del carrusel">
+    <button class="carrusel-flecha carrusel-anterior" type="button" aria-label="Trabajo anterior">&larr;</button>
+    <div class="carrusel-puntos" role="group" aria-label="Elegir trabajo"></div>
+    <button class="carrusel-flecha carrusel-siguiente" type="button" aria-label="Trabajo siguiente">&rarr;</button>
+  </div>
+</section>
+
   <!-- PORTADA / HERO -->
   <main id="inicio" class="contenedor">
     <section class="hero">
@@ -85,12 +122,12 @@
         <article class="card card--refrigeracion">
           <h3>Mantenimiento de Equipos</h3>
           <p>Limpieza, revisión preventiva y ajuste de equipos para mejorar su rendimiento y prolongar su vida útil.</p>
-          <img src="img/instagram-trabajo.png" alt="Ejemplo de mantenimiento de equipos" class="muestra-servicio" loading="lazy">
         </article>
       </div>
-      <div class="carousel-controles" aria-label="Carrusel de servicios de refrigeración">
-        <button type="button" class="carousel-anterior" aria-label="Servicio anterior">&larr;</button>
-        <button type="button" class="carousel-siguiente" aria-label="Servicio siguiente">&rarr;</button>
+      <div>
+         <article>
+          <img class="refri" src="img-trabajos/refrigeracion.png" alt="">
+         </article>
       </div>
     </section>
 
@@ -111,9 +148,10 @@
           <p>Búsqueda y solución de fugas a tierra, cortes parciales y fallas de tensión.</p>
         </article>
       </div>
-      <div class="carousel-controles" aria-label="Carrusel de servicios de electricidad">
-        <button type="button" class="carousel-anterior" aria-label="Servicio anterior">&larr;</button>
-        <button type="button" class="carousel-siguiente" aria-label="Servicio siguiente">&rarr;</button>
+       <div>
+         <article>
+          <img class="refri" src="img-trabajos/electricidad.png" alt="">
+         </article>
       </div>
     </section>
 
@@ -131,7 +169,10 @@
   <footer class="footer">
     <p>&copy; 2026 BJ Servicio Técnico — Refrigeración y Electricidad.</p>
   </footer>
-
+  <dialog class="visor-imagen">
+  <button class="visor-cerrar" type="button" aria-label="Cerrar imagen">×</button>
+  <img class="visor-imagen-grande" alt="">
+</dialog>
   <script src="script.js"></script>
 </body>
 </html>
